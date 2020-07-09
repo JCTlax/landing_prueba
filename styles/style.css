@@ -1,0 +1,304 @@
+body{
+	font-family: Montserrat;
+	margin: 0;
+	padding: 0;
+}
+
+.main-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.landing{
+	background-color: #283850;
+	height: 25rem;
+	display: flex;
+	flex-direction: column;
+	padding-top: 1.5rem;
+}
+
+.nav-items{
+	display: flex;
+	justify-content: space-between;
+	text-decoration: none;
+}
+
+.items-nav{
+	width: 40rem;
+	display: flex;
+	justify-content: space-between;
+	text-decoration: none;
+	align-content: center;
+}
+
+.item-nav{
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.item-nav:hover{
+	color: azure;
+}
+
+.text-gray{
+	color: #B0B0B0;
+}
+
+.logo{
+	font-size: 14px;
+	color: azure;
+}
+
+.landing-content{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+}
+
+.info{
+	padding-top: 2rem;
+}
+
+.buttons{
+	/*background-color: blueviolet;*/
+	width: 24rem;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-info{
+	background-color: #0090F0;
+	border-style: none;
+	font-size: 12px;
+	height: 2rem;
+	width: 10rem;
+	padding: .5rem;
+	color: azure;
+	border-radius: 3px;
+}
+
+.btn-info:hover{
+	cursor: pointer;
+	background-color: azure;
+	color: #0090F0;
+}
+
+.image{
+	/*background-color: blueviolet;*/
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.img-landing{
+	width: 25rem;
+}
+
+.sections{
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.categories{
+	margin-top: 3rem;
+	width: 100%;
+	height: 9rem;
+	/*background-color: blueviolet;*/
+	display: flex;
+	justify-content: space-between;
+}
+
+.category{
+	/*background-color: azure;*/
+	border: 2px solid #B0B0B0;
+	width: 9rem;
+	height: 9rem;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.category:hover{
+	background-color: rgb(177, 230, 255);
+	cursor: pointer;
+}
+
+.cty{
+	width: 4rem;
+}
+
+.category-link{
+	text-decoration: none;
+}
+
+.icon-cat{
+	text-align: center;
+}
+
+.title-cat{
+	font-size: 11px;
+	margin-top: -.1rem;
+	color: black;
+}
+
+.text-views{
+	margin-top: 2rem;
+	/*background-color: blueviolet;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.text-view{
+	color: #0090F0;
+	font-size: 12px;
+}
+
+.text-view:hover{
+	cursor: pointer;
+}
+
+.photo-container{
+	margin-bottom: 2rem;
+	width: 29%;
+	height: 15rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: flex;
+	justify-content: end;
+	border-radius: 5px;
+}
+
+.photos{
+	display: flex;
+	justify-content: space-between;
+}
+
+.pc1{
+	background-color: #283850;
+}
+
+.pc2{
+	background-color: #B0B0B0;
+}
+
+.pc3{
+	background-color: rgb(177, 230, 255);
+}
+
+.img-photo{
+	/*background-color: blueviolet;*/
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.img-float{
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.landing-photo{
+	width: 100%;
+}
+
+.img-photo-float{
+	position: absolute;
+	width: 13rem;
+	border: 1px solid azure;
+}
+
+.footer{
+	background-color: #283850;
+	height: 3rem;
+	text-align: center;
+	color: azure;
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+@media (max-width: 400px){
+	.nav-items{
+		/*background-color: cyan;*/
+		display: inline;
+		text-align: center;
+	}
+
+	.landing{
+		/*background-color: chartreuse;*/
+		height: max-content;
+		padding: 1rem 2rem;
+	}
+
+	.landing-content{
+		align-items: center;
+		/*background-color: crimson;*/
+		flex-direction: column-reverse;
+	}
+
+	.info{
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+
+	.buttons{
+		/*background-color: darkblue;*/
+		display: inline;
+	}
+
+	.btn-info{
+		margin-bottom: 1rem;
+	}
+
+	.items-nav{
+		visibility: hidden;
+		display: none;
+	}
+
+	.categories{
+		/*background-color: darkgreen;*/
+		height: max-content;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+		grid-gap: 1rem;
+	}
+
+	.view-inspirations{
+		/*background-color: darkmagenta;*/
+		padding: 1rem -1rem;
+	}
+
+	.image{
+		/*background-color: darkcyan;*/
+		width: auto;
+	}
+
+	.img-landing{
+		/*background-color: darkgoldenrod;*/
+		width: 75%;
+	}
+
+	.photos{
+		/*visibility: hidden;
+		display: none;*/
+		display: inline;
+	}
+
+	.category{
+		/*background-color: darkorange;*/
+		width: 7rem;
+		height: 7rem;
+	}
+
+	.photo-container{
+		/*background-color: violet;*/
+		width: fit-content;
+		border-radius: 5px;
+	}
+	
+}
